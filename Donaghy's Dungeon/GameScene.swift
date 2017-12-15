@@ -16,7 +16,7 @@ class GameScene: SKScene {
     let font = "Luminari"
     
     override func didMove(to view: SKView) {
-        makeLabel(text: "Donaghy's", fontSize: bigFont, font: font, lines: 1, postionX: Double(frame.width / 2), postionY: DOuble(frame.height * 0.75))
+        makeLabel(text: "Donaghy's", fontSize: bigFont, font: font, lines: 1, postionX: Double(frame.width / 2), postionY: Double(frame.height * 0.75))
      
     }
     
