@@ -14,6 +14,7 @@ class GameScene: SKScene {
     let bigFont = 40
     let smallFont = 20
     let font = "Luminari"
+    var label = SKLabelNode()
     
     
     override func didMove(to view: SKView) {
@@ -30,7 +31,7 @@ class GameScene: SKScene {
     
     func makeLabel(text: String, fontSize: Int, font: String, lines: Int, postionX: Double, postionY: Double){
         
-        let label = SKLabelNode(fontNamed: font)
+        label = SKLabelNode(fontNamed: font)
         label.position = CGPoint(x: postionX, y: postionY)
         label.text = text
         label.numberOfLines = lines
@@ -47,6 +48,7 @@ class GameScene: SKScene {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         removeAllChildren()
+        
     }
     
     
